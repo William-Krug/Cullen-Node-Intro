@@ -4,6 +4,8 @@ console.log('Yay for Node!!!!');
 /**
  * Node is a tool to run JavaScript programs (scripts) without a browser
  *
+ * used to run servers that respond to HTTP (network) requests
+ *
  * in node, module means file
  *
  * Node is JavaScript
@@ -17,6 +19,8 @@ console.log('Yay for Node!!!!');
  * Node is going to run our server
  *
  * In general, what we run in Node is going to handle data
+ *
+ * *** to run a file in terminal => node filename.extension
  */
 
 let age = 33;
