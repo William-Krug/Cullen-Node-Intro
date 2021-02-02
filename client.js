@@ -51,6 +51,8 @@ console.log('Yay for Node!!!!');
  * think of each file as a function and `module.exports` is the `return`
  *
  * there always needs to be one entry point file but the `required` modules can require their own modules
+ *
+ * modules (like functions) should only do one thing
  */
 
 let age = 33;

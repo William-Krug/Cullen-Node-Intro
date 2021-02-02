@@ -15,3 +15,16 @@ let alltheThingsWeWantToExport = {
 //
 // So... `students` will be the return value of require('./cullenites.js');
 module.exports = alltheThingsWeWantToExport; // I want to share this data (the array)
+
+/// Another way of doing the above
+// let students = ['Michael', 'Dusty', 'George', 'Vada'];
+
+// function addStudent(name) {
+//   students.push(name);
+// }
+
+// module.exports = {
+//   students: students,
+//   instrudtor: 'Edan',
+//   addStudent: addStudent,
+// };
