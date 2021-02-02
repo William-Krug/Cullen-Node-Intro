@@ -21,6 +21,10 @@ console.log('Yay for Node!!!!');
  * In general, what we run in Node is going to handle data
  *
  * *** to run a file in terminal => node filename.extension
+ *
+ * can only run 1 file at a time
+ * *** if you want to run more than 1 file, need to `require()` additional files
+ * think of each file as a function and `module.exports` is the `return`
  */
 
 let age = 33;
@@ -55,4 +59,10 @@ switch (grade) {
   case 'F':
     console.log("I'm disappointed in you");
     break;
+}
+
+// Load cullenites.js file
+let cullenites = require('./cullenites.js'); // needs to be a string inside of require('filepath')
+for (let student of cullenites) {
+  console.log(`Welcome to node week, ${student}!`);
 }
