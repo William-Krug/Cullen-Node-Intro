@@ -3,9 +3,10 @@
 
 // Load cullenites.js file
 let cullenites = require('./cullenites.js'); // needs to be a string inside of require('filepath')
-console.log('cullenites:', cullenites);
+console.log('cullenites:', cullenites.students);
+console.log('instructor is:', cullenites.instructor);
 
-let myFavoriteNumber = require('./myFavoriteNumber');
+const myFavoriteNumber = require('./myFavoriteNumber');
 console.log('myFavoriteNumber:', myFavoriteNumber);
 
 let scream = require('./scream');
@@ -84,6 +85,6 @@ switch (grade) {
     break;
 }
 
-for (let student of cullenites) {
+for (let student of cullenites.students) {
   console.log(`Welcome to node week, ${student}!`);
 }
