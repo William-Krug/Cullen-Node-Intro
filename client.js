@@ -11,6 +11,14 @@ console.log('myFavoriteNumber:', myFavoriteNumber);
 let scream = require('./scream');
 console.log('Hello', scream('world!'));
 
+let counter = require('./counter');
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
 console.log('We have JavaScript');
 console.log('Yay for Node!!!!');
 
@@ -38,6 +46,8 @@ console.log('Yay for Node!!!!');
  * can only run 1 file at a time
  * *** if you want to run more than 1 file, need to `require()` additional files
  * think of each file as a function and `module.exports` is the `return`
+ *
+ * there always needs to be one entry point file but the `required` modules can require their own modules
  */
 
 let age = 33;
