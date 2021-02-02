@@ -1,3 +1,16 @@
+// It is convention to keep all or your required files at the top of your script
+// can drop the .js extension in the filepath and get the same results
+
+// Load cullenites.js file
+let cullenites = require('./cullenites.js'); // needs to be a string inside of require('filepath')
+console.log('cullenites:', cullenites);
+
+let myFavoriteNumber = require('./myFavoriteNumber');
+console.log('myFavoriteNumber:', myFavoriteNumber);
+
+let scream = require('./scream');
+console.log('Hello', scream('world!'));
+
 console.log('We have JavaScript');
 console.log('Yay for Node!!!!');
 
@@ -61,8 +74,6 @@ switch (grade) {
     break;
 }
 
-// Load cullenites.js file
-let cullenites = require('./cullenites.js'); // needs to be a string inside of require('filepath')
 for (let student of cullenites) {
   console.log(`Welcome to node week, ${student}!`);
 }
