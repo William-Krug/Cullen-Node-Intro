@@ -5,6 +5,8 @@
 let cullenites = require('./cullenites.js'); // needs to be a string inside of require('filepath')
 console.log('cullenites:', cullenites.students);
 console.log('instructor is:', cullenites.instructor);
+cullenites.addStudent('McKynlee');
+console.log('cullenites:', cullenites.students);
 
 const myFavoriteNumber = require('./myFavoriteNumber');
 console.log('myFavoriteNumber:', myFavoriteNumber);

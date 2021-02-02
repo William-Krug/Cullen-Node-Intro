@@ -5,6 +5,9 @@ let instructor = 'Edan';
 let alltheThingsWeWantToExport = {
   students: students,
   instructor: instructor,
+  addStudent: function (student) {
+    students.push(student);
+  },
 };
 
 // module.exports
